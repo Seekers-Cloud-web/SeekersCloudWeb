@@ -1,0 +1,162 @@
+<div class="main-slider-wrap-outer">
+
+  <div style="display: none" class="left-button-wrap-outer">
+    <i class="fas fa-arrow-left" style="transform: skew(-20deg)"></i>
+    <div class="temp-image-outer" (click)="previousImage(selectedLeftImage)">
+      <img style="width: 100%; height: 100%" src="{{selectedLeftImage}}" alt="">
+    </div>
+  </div>
+  <div style="display: none" class="right-button-wrap-outer">
+    <i class="fas fa-arrow-right" style="transform: skew(20deg)"></i>
+    <div class="temp-image-outer" (click)="nextImage(selectedRightImage)">
+      <img style="width: 100%; height: 100%" src="{{selectedRightImage}}" alt="">
+    </div>
+  </div>
+  <div class="slider-image-wrap-outer" *ngIf="tempCount===0" [@fade]>
+    <div class="text-wrap-outer-outer">
+      <div class="text-wrap-outer">
+        <p class="header-text">
+          {{headersSet[0]}}
+        </p>
+        <br>
+        <p id="sub-text-1" class="sub-text" style="width: 50%; text-align: justify">
+          Tomorrow will be the next big day you ever waited. Expand the possibilities of your business to have the
+          better tomorrow with exclusive solutions!
+        </p>
+        <br>
+        <br>
+        <span class="btn-for-view">
+        INQUIRE NOW
+      </span>
+
+      </div>
+    </div>
+    <img style="width: 100%; height: 100%" src="../../../../../../assets/seekers-cloud-main-slider-images/slider-6.jpg"
+         alt="">
+  </div>
+
+  <div class="slider-image-wrap-outer" *ngIf="tempCount===1" [@fade]>
+    <div class="text-wrap-outer-outer">
+      <div class="text-wrap-outer">
+        <p class="header-text">
+          {{headersSet[1]}}
+        </p>
+        <br>
+        <p id="sub-text-2" class="sub-text" style="width: 50%; text-align: justify">
+          Intelligence is the next high step which the world will take. Are you ready to inspire intelligence and
+          initiate your next level business solution?
+        </p>
+        <br>
+        <br>
+        <span class="btn-for-view">
+        INQUIRE NOW
+      </span>
+
+      </div>
+    </div>
+    <img style="width: 100%; height: 100%" src="../../../../../../assets/seekers-cloud-main-slider-images/slider-2.jpg"
+         alt="">
+  </div>
+
+  <div class="slider-image-wrap-outer" *ngIf="tempCount===2" [@fade]>
+    <div class="text-wrap-outer-outer">
+      <div class="text-wrap-outer">
+
+        <p class="header-text">
+          {{headersSet[2]}}
+        </p>
+        <br>
+        <p id="sub-text-3" class="sub-text" style="width: 50%; text-align: justify">
+          We know that meeting excellence is the ultimate goal of your business. Choose the right place which provides
+          world class solutions where your innovation can reach excellence.
+        </p>
+        <br>
+        <br>
+        <span class="btn-for-view">
+        INQUIRE NOW
+      </span>
+
+      </div>
+    </div>
+    <img style="width: 100%; height: 100%" src="../../../../../../assets/seekers-cloud-main-slider-images/slider-3.jpg"
+         alt="">
+  </div>
+
+  <div class="slider-image-wrap-outer" *ngIf="tempCount===3" [@fade]>
+    <div class="text-wrap-outer-outer">
+      <div class="text-wrap-outer">
+
+        <p class="header-text">
+          {{headersSet[3]}}
+        </p>
+        <br>
+        <p id="sub-text-4" class="sub-text" style="width: 50%; text-align: justify">
+          While everyone runs behind the technology, have you ever thought about the next step of your business?
+          Remember we are in the generation of the internet.
+        </p>
+        <br>
+        <br>
+        <span class="btn-for-view">
+        LEARN MORE
+      </span>
+
+      </div>
+    </div>
+    <img style="width: 100%; height: 100%" src="../../../../../../assets/seekers-cloud-main-slider-images/slider-4.jpg"
+         alt="">
+  </div>
+
+  <div class="slider-image-wrap-outer" *ngIf="tempCount===4" [@fade]>
+    <div class="text-wrap-outer-outer">
+      <div class="text-wrap-outer-outer">
+      </div>
+      <div class="text-wrap-outer">
+
+        <p class="header-text">
+          {{headersSet[4]}}
+        </p>
+        <br>
+        <p id="sub-text-5" class="sub-text" style="width: 50%; text-align: justify">
+          Systematize your business without boundaries with the solutions which raise your voice in 24*7 on behalf of
+          your business! Get familiar with our unique products.
+        </p>
+        <br>
+        <br>
+        <span class="btn-for-view">
+        INQUIRE NOW
+      </span>
+
+      </div>
+    </div>
+
+    <img style="width: 100%; height: 100%" src="../../../../../../assets/seekers-cloud-main-slider-images/slider-5.jpg"
+         alt="">
+  </div>
+
+  <div class="slider-image-wrap-outer" *ngIf="tempCount===5" [@fade]>
+    <div class="text-wrap-outer-outer">
+      <div class="text-wrap-outer">
+
+        <p class="header-text">
+          {{headersSet[5]}}
+        </p>
+        <br>
+        <p id="sub-text-6" class="sub-text" style="width: 50%; text-align: justify">
+          Be a talented individual in your preferred domain within the shortest period of time. Checkout our exclusive
+          course contents delivered by well trained lecturers and Register Now to enjoy the limited offers
+        </p>
+
+        <br>
+        <br>
+        <span class="btn-for-view" routerLink="/service/TEACHING">
+        APPLY FOR FREE
+      </span>
+
+      </div>
+    </div>
+    <img style="width: 100%; height: 100%" src="../../../../../../assets/seekers-cloud-main-slider-images/slider-1.jpg"
+         alt="">
+  </div>
+
+</div>
+

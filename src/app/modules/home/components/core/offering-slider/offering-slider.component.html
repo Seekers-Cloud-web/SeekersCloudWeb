@@ -1,0 +1,28 @@
+<div class="main-wrap-for-offer">
+  <p class="offer-text">WHAT WE OFFER</p>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <owl-carousel [options]="myCarouselOptions" [carouselClasses]="['owl-theme', 'sliding']">
+    <div class="item" *ngFor="let image of mySlideImages;let i = index">
+      <div class="inner-wrap-of-slider">
+        <div class="wrap-of-slider-data" (click)="loadUniqueService(linkSet[i])">
+          <div class="image-wrap-for-slider">
+            <div class="slider-inner">
+              <img
+                src="{{image}}"
+                alt="">
+            </div>
+          </div>
+          <div class="describe-wrap">
+            <p class="text-describe-head">{{ourServices[i]}}</p>
+            <!-- <p class="text-describe-sub">{{descriptionArray[i]}}</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </owl-carousel>
+
+</div>
