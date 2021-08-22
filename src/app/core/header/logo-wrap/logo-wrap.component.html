@@ -1,0 +1,72 @@
+<div class="main-wrap">
+  <div class="logo-inner-wrap">
+    <div class="ham-wrap" (click)="manageNavSlider()" (clickOutside)="onClickedOutside($event)">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <p>
+      <img routerLink="/" class="logo" src="../../../../../assets/logo/seekers-cloud-logo.png" alt="logo">
+    </p>
+  </div>
+</div>
+
+<div class="nav-slider-main-wrap" *ngIf="navSliderState" [@navSlider]>
+  <div class="nav-slider-inner-wrap">
+    <div class="top-contact-wrap-outer">
+      <p class="top-contact-number"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;+94 7149 11 257</p>
+      <p class="top-address"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; No:19/1 Gunarathana Road Panadura</p>
+      <div class="top-social">
+        <div class="social-wrap">
+          <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+        <div class="social-wrap">
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="social-wrap">
+          <span><i class="fab fa-linkedin-in"></i></span>
+        </div>
+        <div class="social-wrap">
+          <span><i class="fab fa-youtube"></i></span>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <!--<div class="register-wrap">
+      <span class="txt-register-button" routerLink="/signIn">REGISTER</span>
+    </div>-->
+
+    <ul class="nav-bar-list">
+      <li routerLink="/" class="{{selectedRoute==='Home'?'active-Item':''}}" (click)="setState('Home')">
+        <a>HOME</a>
+      </li>
+      <li routerLink="/service/TEACHING" class="{{selectedRoute==='Teaching'?'active-Item':''}}"
+          (click)="setState('Teaching')">
+        <a>COURSES</a>
+      </li>
+      <li routerLink="/services" class="{{selectedRoute==='Services'?'active-Item':''}}" (click)="setState('Services')">
+        <a>SERVICES</a>
+      </li>
+      <li routerLink="/products" class="{{selectedRoute==='Products'?'active-Item':''}}" (click)="setState('Products')">
+        <a>PRODUCTS</a>
+      </li>
+      <li routerLink="/solutions" class="{{selectedRoute==='Solutions'?'active-Item':''}}"
+          (click)="setState('Solutions')">
+        <a>SOLUTIONS</a>
+      </li>
+      <li routerLink="/news" class="{{selectedRoute==='News'?'active-Item':''}}" (click)="setState('News')">
+        <a>NEWS</a>
+      </li>
+      <li routerLink="/careers" class="{{selectedRoute==='Careers'?'active-Item':''}}" (click)="setState('Careers')">
+        <a>CAREERS</a>
+      </li>
+      <li routerLink="/about" class="{{selectedRoute==='About'?'active-Item':''}}" (click)="setState('About')">
+        <a>ABOUT</a>
+      </li>
+      <li routerLink="/contact" class="{{selectedRoute==='Contact'?'active-Item':''}}" (click)="setState('Contact')">
+        <a>CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+.main-wrap-for-offer{
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.slider-inner:hover {
+
+  img {
+    animation-name: scaleAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.wrap-of-slider-data:hover{
+  cursor: pointer;
+}
+.offer-text{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.inner-wrap-of-slider{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.inner-wrap-of-slider{
+  width: 100%;
+  height: auto;
+}
+
+.image-wrap-for-slider{
+  width: 100%;
+  height: 150px;
+}
+
+.slider-inner{
+  width: 100%;
+  height: 100%;
+  margin-top: -20px;
+  position: relative;
+  overflow: hidden;
+
+  img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+}
+
+.describe-wrap{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.text-describe-head{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.text-describe-sub{
+  text-align: justify;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #7f8c8d;
+}

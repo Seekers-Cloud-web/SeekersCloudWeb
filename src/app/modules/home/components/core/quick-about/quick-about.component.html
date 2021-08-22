@@ -1,0 +1,198 @@
+<div class="about-us-wrap-outer" id="main-wrap">
+  <div class="top-set-for-about">
+    <div class="row" style="margin: 0">
+      <div class="col-6 col-sm-3 top-inner-set" (click)="managePanelVisibility('SERVICES')">
+        <p class="tittle-text" id="type1">OUR SERVICES</p>
+        <div class="border-div" id="border-div-1"></div>
+      </div>
+      <div class="col-6 col-sm-3 top-inner-set" (click)="managePanelVisibility('VISION')">
+        <p class="tittle-text" id="type2">OUR VISION</p>
+        <div class="border-div" id="border-div-2"></div>
+      </div>
+      <div class="col-6 col-sm-3 top-inner-set" (click)="managePanelVisibility('MISSION')">
+        <p class="tittle-text" id="type3">OUR MISSION</p>
+        <div class="border-div" id="border-div-3"></div>
+      </div>
+      <div class="col-6 col-sm-3 top-inner-set" (click)="managePanelVisibility('GOALS')">
+        <p class="tittle-text" id="type4">OUR GOALS</p>
+        <div class="border-div" id="border-div-4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="left-side">
+    <div *ngIf="servicesState" class="our-service-wrap">
+      <div class="row" style="margin: 0; height: 50%; margin-bottom: 50px">
+        <div class="item">
+          <div class="item-top-wrap row">
+            <!--<div class="item-icon-wrap">
+              <p>
+                &lt;!&ndash;<img src="assets/seekers-cloud-images/front-about-icons/1-min.png" alt="">&ndash;&gt;
+              </p>
+            </div>-->
+            <div class="item-data-name-wrap">
+              <p>Business Consultation</p>
+            </div>
+          </div>
+          <div class="details-wrap">
+            Get the experienced consultation to your business and analyse the exact requirement from experienced
+            business analysts. Our team helps you to identify the exact need of your business and come up with the ever
+            best solutions.
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-top-wrap row">
+            <!--<div class="item-icon-wrap">
+              <p>
+                &lt;!&ndash; <img src="assets/seekers-cloud-images/front-about-icons/2-min.png" alt="">&ndash;&gt;
+              </p>
+            </div>-->
+            <div class="item-data-name-wrap">
+              <p>Software Development</p>
+            </div>
+          </div>
+          <div class="details-wrap">
+            The right development decides your next billion dollar earnings. Doing it once and doing it right is the
+            secret of earning happy customers worldwide. We do software developments with a wide range of technologies
+            and latest concepts to meet your ultimate goal.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin: 0; height: 50%">
+        <div class="item">
+          <div class="item-top-wrap row">
+            <!--<div class="item-icon-wrap">
+              <p>
+                &lt;!&ndash;<img src="assets/seekers-cloud-images/front-about-icons/3-min.png" alt="">&ndash;&gt;
+              </p>
+            </div>-->
+            <div class="item-data-name-wrap">
+              <p>Quality Assurance</p>
+            </div>
+          </div>
+          <div class="details-wrap">
+            We believe quality assurance as one of the key stages. We ensure the development met all the world class
+            standards after the QA methodologies we followed internally.
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-top-wrap row">
+            <!--<div class="item-icon-wrap">
+              <p>
+                &lt;!&ndash;<img src="assets/seekers-cloud-images/front-about-icons/4-min.png" alt="">&ndash;&gt;
+              </p>
+            </div>-->
+            <div class="item-data-name-wrap">
+              <p>Software Deployment</p>
+            </div>
+          </div>
+          <div class="details-wrap">
+            Diving our client to a happy deployment is the goal of our journey with them. We are there to assist and
+            guide our happy clients even after the deployment.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="visionState" class="our-vision-wrap">
+      <div class="pic-wrap">
+        <div class="image-wrap">
+          <p style="text-align: center">
+            <img
+              src="https://seekerscloud.s3.us-east-2.amazonaws.com/main-page/vision-min.jpg"
+              alt="">
+          </p>
+
+        </div>
+      </div>
+      <div class="data-wrap">
+        <div class="data-wrap-inner">
+          <div class="data-wrap-inner-inner">
+            <p class="tittle">
+              Vision
+            </p>
+            <p class="desc">
+              Serve the community with a wide range of quality IT solutions which can make the satisfaction of client’s
+              client.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="missionState" class="our-vision-wrap">
+      <div class="pic-wrap">
+        <div class="image-wrap">
+          <p style="text-align: center">
+            <img
+              src="https://seekerscloud.s3.us-east-2.amazonaws.com/main-page/mission-min.jpg"
+              alt="">
+          </p>
+
+        </div>
+      </div>
+      <div class="data-wrap">
+        <div class="data-wrap-inner">
+          <div class="data-wrap-inner-inner">
+            <p class="tittle">
+              Our Mission
+            </p>
+            <p class="desc">
+              Enhance the business growth of our customers with quality developments which can achieve their ultimate
+              goals of the business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="goalsState" class="our-vision-wrap">
+      <div class="pic-wrap">
+        <div class="image-wrap">
+          <p style="text-align: center">
+            <img
+              src="https://seekerscloud.s3.us-east-2.amazonaws.com/main-page/goal-min.jpg"
+              alt="">
+          </p>
+
+        </div>
+      </div>
+      <div class="data-wrap">
+        <div class="data-wrap-inner">
+          <div class="data-wrap-inner-inner">
+            <p class="tittle">
+              Our Goals
+            </p>
+            <p class="desc">
+              Our mission is to provide innovative repair services for your computers, laptops, and other high-tech
+              devices and gadgets. We also aim to give you excellent customer service and quality repair with a quick
+              turnaround. We strive to get you back to normal use of your device as soon as possible without the need to
+              overpay for our services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="right-side-tower">
+      <div class="top-inner">
+        <div class="left-data-set">
+          <p class="text-about-company">About Company</p>
+        </div>
+        <div class="right-icon">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="other-square {{servicesState?'other-square-selected':''}}"
+           (click)="managePanelVisibility('SERVICES')">
+        <P class="text">OUR SERVICES</P>
+      </div>
+      <div class="other-square {{visionState?'other-square-selected':''}}" (click)="managePanelVisibility('VISION')">
+        <P class="text">OUR VISION</P>
+      </div>
+      <div class="other-square {{missionState?'other-square-selected':''}}" (click)="managePanelVisibility('MISSION')">
+        <P class="text">OUR MISSION</P>
+      </div>
+      <div class="other-square {{goalsState?'other-square-selected':''}}" (click)="managePanelVisibility('GOALS')">
+        <P class="text">OUR GOALS</P>
+      </div>
+    </div>
+  </div>
+</div>
