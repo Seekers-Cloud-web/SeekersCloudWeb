@@ -8,6 +8,10 @@ import { TopBarComponent } from './core/header/top-bar/top-bar.component';
 import { LogoWrapComponent } from './core/header/logo-wrap/logo-wrap.component';
 import { TopNavBarComponent } from './core/header/top-nav-bar/top-nav-bar.component';
 import {OwlModule} from "ngx-owl-carousel";
+import {ToastrModule} from "ngx-toastr";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -20,9 +24,15 @@ import {OwlModule} from "ngx-owl-carousel";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OwlModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    OwlModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
+  exports: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

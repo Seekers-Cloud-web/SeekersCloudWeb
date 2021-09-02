@@ -14,7 +14,6 @@ export class OfferingSliderComponent implements OnInit {
 
   linkSet: string[] = [
     'MOBILE APPLICATION DEVELOPMENTS',
-    'TEACHING',
     'INTERNSHIPS',
     'WEB APPLICATION DEVELOPMENTS',
     'QUALITY ASSURANCE',
@@ -30,31 +29,27 @@ export class OfferingSliderComponent implements OnInit {
 
   ourServices = [
     'Mobile Application Development',
-    'Teaching',
     'Internships',
     'Web Application Development',
     'Quality Assurance',
     'Business Analysis',
     '(IOT) Development',
-    'Deployments',
+    'Application Deployments',
     'Game Development',
-    'Embedded System Development',
     'IT Consulting',
   ];
 
 
   mySlideImages = [
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/mobileappdevelopment.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/teaching.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/intership.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/web+application+dev.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/qulity+assur.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/business+analysis.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/IOT.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/Deploye.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/game.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/embedded.svg',
-    'https://seekerscloud.s3.us-east-2.amazonaws.com/what-we-offer/Consulting.svg'
+    'https://seekersc-loud.s3.us-east-2.amazonaws.com/what-we-offer/mobileappdevelopment.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/intership.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/web+application+dev.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/qulity+assur.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/business+analysis.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/IOT.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/Deploye.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/game.svg',
+    'https://seekers-cloud.s3.us-east-2.amazonaws.com/what-we-offer/Consulting.svg'
   ];
 
   myCarouselOptions = {

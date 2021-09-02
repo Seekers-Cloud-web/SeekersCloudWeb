@@ -1,0 +1,47 @@
+<div class="inner-wrap-for-inquiry">
+  <div class="row" style="margin: 0">
+    <div class="col-sm-12 col-md-6">
+      <div class="text-input-wrap">
+        <input maxlength="45" [(ngModel)]="name" type="text" placeholder="Your Name">
+      </div>
+      <p *ngIf="nameErrorState" class="alert alert-danger" style="margin-top: 3px">
+        Please Provide a valid name!
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="text-input-wrap">
+        <input maxlength="15" [(ngModel)]="contact" type="text" placeholder="Contact Number">
+      </div>
+      <p *ngIf="contactErrorState" class="alert alert-danger" style="margin-top: 3px">
+        Contact Number is required!
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="text-input-wrap">
+        <input maxlength="100" [(ngModel)]="email" type="text" placeholder="Email">
+      </div>
+      <p  *ngIf="emailErrorState" class="alert alert-danger" style="margin-top: 3px">
+        email address is required!
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="text-input-wrap">
+        <input maxlength="200" [(ngModel)]="subject" type="text" placeholder="Subject">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="text-input-wrap-for-message">
+        <textarea maxlength="1000" [(ngModel)]="message" placeholder="MESSAGE" class="form-control" id="exampleFormControlTextarea1"
+                  rows="5"></textarea>
+      </div>
+      {{message.length}}/1000
+    </div>
+    <div class="col-sm-12">
+      <div class="text-input-wrap-for-message" style="margin-top: 30px; border: none!important;">
+        <p style="text-align: right">
+          <span (click)="makeInquiry()">SEND MESSAGE</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

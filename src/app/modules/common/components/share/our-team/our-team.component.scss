@@ -1,0 +1,90 @@
+.main-wrap{
+  width: 100%;
+  height: auto;
+  padding: 80px 15px;
+  background-color: white;
+}
+.left-set-wrap, .right-set-wrap{
+  height: 100%;
+}
+
+.top-text{
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+.text-tittle{
+  color: rgba(41, 128, 185,1.0);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.text-describe{
+  color: rgba(52, 73, 94,1.0);
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.inner-wrap-of-slider{
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+}
+
+.imag-wrap-outer{
+  width: 100%;
+  height: 200px;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.user-name-text{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 5px;
+}
+
+.user-position-text{
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(41, 128, 185,1.0);
+  margin-top: -10px;
+}
+
+.social-wrap-outer{
+  width: 100%;
+  height: 40px;
+
+}
+.inner-social-outer{
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+  display: none;
+}
+
+.inner-wrap-of-slider:hover .inner-social-outer{
+  display: inline-block;
+}
+
+
+.icon-wrap{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 160, 133,1.0);
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+}
+.icon-wrap:hover{
+  cursor: pointer;
+}

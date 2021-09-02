@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl_For_Expressway_Education_Service: 'http://192.168.8.146:3008/api/v1/',
+  baseUrl_For_SeekersCloud_Service: 'http://192.168.1.42:3000/api/v1/'
 };
 
 /*

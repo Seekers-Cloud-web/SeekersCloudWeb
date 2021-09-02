@@ -1,0 +1,63 @@
+<div class="main-wrap">
+  <div class="row" style="margin: 0">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 left-set-wrap">
+      <div class="left-side-inner">
+        <p class="top-text">
+          OUR TEAM
+        </p>
+        <p class="text-tittle">
+          Meet our experienced, dedicated and passionate team.
+        </p>
+        <p class="text-describe">
+          Our team always cares and works on behalf of the client's satisfaction. Providing the best solutions and
+          assisting the client's business to achieve their own goal is our team's ultimate happiness.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-8 col-lg-9 right-set-wrap">
+
+      <owl-carousel [options]="myCarouselOptions" [carouselClasses]="['owl-theme', 'sliding']">
+        <div class="item" *ngFor="let image of mySlideImages;let i = index">
+          <div class="inner-wrap-of-slider">
+            <div class="imag-wrap-outer">
+              <img src="{{image}}" alt="">
+            </div>
+
+            <p class="user-name-text">
+              {{namesList[i]}}
+            </p>
+
+            <p class="user-position-text">
+              {{designationList[i]}}
+            </p>
+
+            <div class="social-wrap-outer">
+              <div class="inner-social-outer">
+                <div class="icon-wrap" (click)="navigateToSocial(facebookLinksArray[i])">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </div>
+              <div class="inner-social-outer">
+                <div class="icon-wrap" (click)="navigateToSocial(linkDingLinksArray[i])">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+              <div class="inner-social-outer">
+                <div class="icon-wrap" (click)="navigateToSocial(twitterLinksArray[i])">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </div>
+              <div class="inner-social-outer">
+                <div class="icon-wrap" (click)="navigateToSocial(instagramLinksArray[i])">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </owl-carousel>
+
+    </div>
+  </div>
+</div>
